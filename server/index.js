@@ -16,7 +16,7 @@ app.get("/stats", async (req, res) => {
         // const forked = false;
         const resPerPage = 100;
         let repositories = [];
-        const accessToken = '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'
+        const accessToken = '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'
 
         for (let page = 1; ; page++) {
             const response = await axios.get(`https://api.github.com/users/${username}/repos?page=${page}&per_page=${resPerPage}`, {

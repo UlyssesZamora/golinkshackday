@@ -9,7 +9,7 @@ function App() {
     const [username, setUsername] = useState('');
 
     const handleSearch = () => {
-        const accessToken = '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'
+        const accessToken = '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'
         axios.get(`http://localhost:3001/stats?username=${username}&forked=${forked}`, {
             headers: {
                 Authorization: `Bearer ${accessToken}`,
